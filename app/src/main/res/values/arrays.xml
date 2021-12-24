@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="orders">
+        <item>@string/latest</item>
+        <item>@string/oldest</item>
+        <item>@string/popular</item>
+    </array>
+</resources>

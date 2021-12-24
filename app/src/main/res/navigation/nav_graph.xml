@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authFragment">
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.unsplashapp.ui.auth.AuthFragment"
+        android:label="AuthFragment">
+        <action
+            android:id="@+id/login"
+            app:destination="@id/tabsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabsFragment"
+        android:name="com.example.unsplashapp.ui.tabs.TabsFragment"
+        android:label="TabsFragment"></fragment>
+    <action
+        android:id="@+id/open_collection_photos"
+        app:destination="@id/collectionPhotosFragment"></action>
+    <action
+        android:id="@+id/open_photo"
+        app:destination="@id/photoDetailsFragment"></action>
+    <fragment
+        android:id="@+id/collectionPhotosFragment"
+        android:name="com.example.unsplashapp.ui.collection.CollectionPhotosFragment"
+        android:label="CollectionPhotosFragment">
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="dsc"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="count"
+            app:argType="integer" />
+        <argument
+            android:name="author"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoDetailsFragment"
+        android:name="com.example.unsplashapp.ui.photo_details.PhotoDetailsFragment"
+        android:label="PhotoDetailsFragment">
+
+        <argument
+            android:name="link"
+            app:argType="string" />
+
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="author"
+            app:argType="string" />
+        <argument
+            android:name="likes"
+            app:argType="integer" />
+        <argument
+            android:name="liked"
+            app:argType="boolean" />
+        <argument
+            android:name="author_url"
+            app:argType="string" />
+        <argument
+            android:name="content_url"
+            app:argType="string" />
+
+        <argument
+            android:name="content_url_regular"
+            app:argType="string" />
+
+        <argument
+            android:name="created"
+            app:argType="string" />
+
+        <argument
+            android:name="width"
+            app:argType="integer" />
+        <argument
+            android:name="height"
+            app:argType="integer" />
+    </fragment>
+</navigation>

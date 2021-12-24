@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">UnsplashApp</string>
+    <string name="saved_token_key">saved_token_key</string>
+    <string name="error">Error</string>
+    <string name="photos">Photos</string>
+    <string name="collections">Collections</string>
+    <string name="photos_count">%1$d photos</string>
+    <string name="collection_meta">%1$d photos • Author %2$s</string>
+    <string name="publication_date">Published\n%1$s</string>
+    <string name="size">Size\n%1$d×%2$d</string>
+    <string name="content_description">Content description</string>
+    <string name="my">My photos</string>
+    <string name="sort_by">Sort by</string>
+    <string name="latest">Latest</string>
+    <string name="oldest">Oldest</string>
+    <string name="popular">Popular</string>
+    <string name="login">Login with Unsplash</string>
+</resources>
